@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="area">
+
+        <item>海曙区</item>
+        <item>江东区</item>
+        <item>鄞州区</item>
+        <item>镇海区</item>
+        <item>北仑区</item>
+    </string-array>
+</resources>

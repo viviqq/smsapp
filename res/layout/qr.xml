@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:background="@android:color/white"  
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtRule"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:lines="3"
+        android:text="二维码短信内容"
+        android:textSize="20sp" />
+      
+    <LinearLayout
+        android:orientation="horizontal"  
+        android:layout_marginTop="10dp"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </EditText>
+  
+    </LinearLayout>  
+      
+    <ImageView   
+        android:id="@+id/iv_qr_image"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_marginTop="10dp"  
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnGetSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="读取"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_send_again"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="再次发送" />
+  
+</LinearLayout>  
